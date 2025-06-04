@@ -284,7 +284,7 @@ void save_svg(const std::vector<Polygon>& polygons, std::string filename, const 
 }
 
 int main() {
-	int N = 100;
+	int N = 1000;
 
 	VoronoiDiagram Vor;
 	
@@ -306,6 +306,6 @@ int main() {
 
 	std::cout << "Voronoi compute time: " << elapsed.count() << " seconds" << std::endl;
 
-	save_svg(ot.vor.diagram, "testOut5.svg", &ot.vor.points);
+	save_svg(ot.vor.diagram, "testOut_equal_1000.svg", &ot.vor.points);
 
 }
